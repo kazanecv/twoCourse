@@ -24,10 +24,10 @@ public class StringProcessorTest {
         return new Object[][]{
                 {"a", "a", 1},
                 {"aa", "a", 2},
-                {"aaa", "aa", 2},
-//                {"", "aaa", 0}  throw
+                {"aaaa", "aa", 3},
+                {"", "aaa", 0}, //  throw
 //                {"", "", 0}
-                {"asdf", "", -1},
+//                {"asdf", "", -1},
                 {"aaaa", "vvv", 0},
                 {"aeqra facwda", "a", 4}
         };

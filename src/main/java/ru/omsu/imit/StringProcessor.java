@@ -25,13 +25,13 @@ public class StringProcessor {
         s = s.replace("1", "один");
         s = s.replace("2", "два");
         s = s.replace("3", "три");
-        s = s.replace("4", "четыре");
-        s = s.replace("5", "пять");
-        s = s.replace("6", "шесть");
-        s = s.replace("7", "семь");
-        s = s.replace("8", "восемь");
-        s = s.replace("9", "девять");
-        s = s.replace("0", "ноль");
+//        s = s.replace("4", "четыре");
+//        s = s.replace("5", "пять");
+//        s = s.replace("6", "шесть");
+//        s = s.replace("7", "семь");
+//        s = s.replace("8", "восемь");
+//        s = s.replace("9", "девять");
+//        s = s.replace("0", "ноль");
         return s;
     }
     public static StringBuilder deleteSymbol(StringBuilder text){
