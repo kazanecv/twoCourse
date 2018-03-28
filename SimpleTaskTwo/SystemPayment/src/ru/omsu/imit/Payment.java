@@ -8,19 +8,29 @@ public class Payment {
     private int month;
     private int year;
     private int amount;
+
     public Payment(){
-        
+
     }
     public Payment(String name,int day,int month,int year,int amount){
         if(name.trim().length() == 0 || name==null) throw new IllegalArgumentException("ФИО Плательщика не указано");
         if(day<=0 || month<=0 || year<0) throw new IllegalArgumentException("Некорректная дата");
         if(amount<=0) throw new IllegalArgumentException("Некорректная сумма платежа");
-        this.name= new String(name);
+        this.name = name;
         this.day=day;
         this.month=month;
         this.year=year;
         this.amount=amount;
     }
+
+    public Payment(Payment pay) {
+        this.name = pay.name;
+        this.day = pay.day;
+        this.month = pay.month;
+        this.year = pay.year;
+        this.amount = pay.amount;
+    }
+
     public String getName(){
         return name;
     }
@@ -36,9 +46,10 @@ public class Payment {
     public int getAmount(){
         return amount;
     }
+
     public void setName(String name){
         if(name=="" || name==null) throw new IllegalArgumentException("ФИО Плательщика не указано");
-        this.name = new String(name);
+        this.name = name;
     }
     public void setDay(int day){
         if(day<=0) throw new IllegalArgumentException("Некорректный день");

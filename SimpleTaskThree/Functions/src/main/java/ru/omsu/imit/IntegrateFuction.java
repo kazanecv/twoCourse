@@ -1,7 +1,7 @@
 package ru.omsu.imit;
 
 public class IntegrateFuction implements Fanctional<Function> {
-    public double decideFanctional(Function fun,double a,double b) {
+    public double decideFanctional(Function fun,double a,double b) throws IllegalArgumentException{
         if(a>b) throw new IllegalArgumentException("Некорректный отрезок!");
         double res=0;
         int n = 1000;
